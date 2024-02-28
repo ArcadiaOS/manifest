@@ -27,7 +27,7 @@
     <linkfile src="bazel.BUILD" dest="BUILD" />
   </project>
 
-  <project path="build/make" name="crdroidandroid/android_build" groups="pdk" remote="crdroid" >
+<!--  <project path="build/make" name="crdroidandroid/android_build" groups="pdk" remote="crdroid" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
     <linkfile src="core" dest="build/core" />
@@ -39,7 +39,7 @@
   <project path="build/soong" name="crdroidandroid/android_build_soong" groups="pdk,tradefed" remote="crdroid" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-  </project>
+  </project> -->
 
   <project path="device/lineage/sepolicy" name="crdroidandroid/android_device_crdroid_sepolicy" remote="crdroid" />
 
