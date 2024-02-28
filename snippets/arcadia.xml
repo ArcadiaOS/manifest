@@ -1,0 +1,9 @@
+<remote  name="arcadia"
+           fetch="https://github.com/"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/14.0" />
+
+
+<project path="vendor/addons" name="ArcadiaOS/android_vendor_addons" remote="arcadia" />
+<project path="vendor/lineage" name="ArcadiaOS/vendor_arcadia" remote="arcadia" />
