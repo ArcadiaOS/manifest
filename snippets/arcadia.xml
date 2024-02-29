@@ -7,6 +7,10 @@
            sync-j="4"
            revision="refs/heads/14.0" />
 
+<remote name="banana-gitlab"
+          fetch="https://gitlab.com/bananadroid"
+          revision="14" />
+
 <project path="build/make" name="ArcadiaOS/build" groups="pdk" remote="arcadia" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -23,6 +27,8 @@
 
   <project path="packages/apps/SetupWizard" name="ArcadiaOS/packages_apps_SetupWizard" remote="arcadia" />
   <project path="vendor/addons" name="ArcadiaOS/vendor_addons" remote="arcadia" />
+  <project path="vendor/google/gms" name="vendor_google_gms" remote="banana-gitlab" />
+  <project path="vendor/google/pixel" name="vendor_google_pixel" remote="banana-gitlab" />
   <project path="vendor/lineage" name="ArcadiaOS/vendor_arcadia" remote="arcadia" />
   <project path="frameworks/base" name="ArcadiaOS/frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="arcadia" />
   <project path="packages/apps/Settings" name="ArcadiaOS/packages_apps_Settings" groups="pdk-fs" remote="arcadia" />
