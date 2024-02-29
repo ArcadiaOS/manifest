@@ -18,9 +18,10 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" /> 
   </project>
 
-<project path="packages/apps/SetupWizard" name="ArcadiaOS/packages_apps_SetupWizard" remote="arcadia" />
-<project path="vendor/addons" name="ArcadiaOS/vendor_addons" remote="arcadia" />
-<project path="vendor/lineage" name="ArcadiaOS/vendor_arcadia" remote="arcadia" />
-<project path="frameworks/base" name="ArcadiaOS/frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="arcadia" />
-<project path="packages/apps/Settings" name="ArcadiaOS/packages_apps_Settings" groups="pdk-fs" remote="arcadia" />
-<project path="packages/apps/crDroidSettings" name="ArcadiaOS/packages_apps_ArcadiaSettings" remote="arcadia" />
+  <project path="packages/apps/SetupWizard" name="ArcadiaOS/packages_apps_SetupWizard" remote="arcadia" />
+  <project path="vendor/addons" name="ArcadiaOS/vendor_addons" remote="arcadia" />
+  <project path="vendor/lineage" name="ArcadiaOS/vendor_arcadia" remote="arcadia" />
+  <project path="frameworks/base" name="ArcadiaOS/frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="arcadia" />
+  <project path="packages/apps/Settings" name="ArcadiaOS/packages_apps_Settings" groups="pdk-fs" remote="arcadia" />
+  <project path="packages/apps/crDroidSettings" name="ArcadiaOS/packages_apps_ArcadiaSettings" remote="arcadia" />
+  <project path="lineage-sdk" name="ArcadiaOS/lineage-sdk" remote="arcadia" />
