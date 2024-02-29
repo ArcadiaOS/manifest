@@ -1,3 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
 <remote  name="arcadia"
            fetch="https://github.com/"
            sync-c="true"
@@ -25,3 +28,5 @@
   <project path="packages/apps/Settings" name="ArcadiaOS/packages_apps_Settings" groups="pdk-fs" remote="arcadia" />
   <project path="packages/apps/crDroidSettings" name="ArcadiaOS/packages_apps_ArcadiaSettings" remote="arcadia" />
   <project path="lineage-sdk" name="ArcadiaOS/lineage-sdk" remote="arcadia" />
+
+</manifest>
