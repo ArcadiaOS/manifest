@@ -13,14 +13,16 @@ sudo apt install bc bison build-essential ccache curl flex g++-multilib gcc-mult
 Install Repo tool
 ```bash
 # Make a directory where Repo will be stored and add it to the path
-$ mkdir ~/bin
-$ PATH=~/bin:$PATH
+mkdir ~/bin
+PATH=~/bin:$PATH
+```
 
+```
 # Download Repo itself
-$ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 
 # Make Repo executable
-$ chmod a+x ~/bin/repo
+chmod a+x ~/bin/repo
 ```
 
 ### 1.2 Initializing Repo ###
@@ -28,11 +30,12 @@ $ chmod a+x ~/bin/repo
 ```bash
 # Create a directory for the source files
 # This can be located anywhere (as long as the fs is case-sensitive)
-$ mkdir ArcadiaOS
-$ cd ArcadiaOS
-
+mkdir ArcadiaOS
+cd ArcadiaOS
+```
+```
 # Install Repo in the created directory
-$ repo init --depth=1 -u https://github.com/ArcadiaOS/manifest.git -b 14.0 --git-lfs
+repo init --depth=1 -u https://github.com/ArcadiaOS/manifest.git -b 14.0 --git-lfs
 ```
 
 This is what you will run each time you want to pull in upstream changes. Keep in mind that on your
@@ -41,13 +44,17 @@ and their change histories.
 
 ```bash
 # Let Repo take care of all the hard work
-$ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 
 ```bash
 # Run to prepare our devices list
-$ . build/envsetup.sh
+. build/envsetup.sh
+```
+```
 # ... now run
-$ lunch lineage_devicecodename-buildtype
-$ m bacon -j$(nproc --all)
+lunch lineage_devicecodename-buildtype
+```
+```
+m bacon -j$(nproc --all)
 ```
